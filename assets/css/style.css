@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline-color: #3389e6;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  top: 0 !important;
+  margin: 0;
+  padding: 0;
+}
+body .button-one {
+  background: #1459a3;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+body .button-one:hover {
+  background: #ffffff;
+  color: #1459a3;
+  border: 1px solid #1459a3;
+}
+body .button-two {
+  background: #ffffff;
+  color: #1459a3;
+  border: 1px solid #1459a3;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+body .button-two:hover {
+  background: #1459a3;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+body .skiptranslate {
+  display: none !important;
+}
+body .goog-te-spinner-pos {
+  display: none !important;
+}
+
+.shrink .navbar {
+  background: #8dbef1;
+  height: 80px;
+}
+.shrink .navbar .dropdown-toggle,
+.shrink .navbar .nav-link {
+  color: #1459a3;
+  transition: 0.5s;
+}
+.shrink .navbar .dropdown-toggle:hover,
+.shrink .navbar .nav-link:hover {
+  color: #60a3eb;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header.jpg") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+header .navbar-brand .logo {
+  box-sizing: border-box;
+  border: none;
+  padding: 2px;
+  border-radius: 50%;
+  width: 50px;
+}
+header .dropdown-toggle,
+header .nav-link {
+  color: #fff;
+  transition: 0.5s;
+}
+header .dropdown-toggle:hover,
+header .nav-link:hover {
+  color: #60a3eb;
+}
+header .dropdown-menu {
+  border: none;
+  transform: translateX(-50px);
+  box-shadow: 1px 1px 10px #e0dfdf;
+}
+header .dropdown-menu .dropdown-item {
+  color: #1459a3;
+  transition: 0.3s;
+}
+header .dropdown-menu .dropdown-item:hover {
+  background: transparent;
+  margin-left: 10px;
+}
+header button {
+  width: 88px;
+  height: 40px;
+}
+header .fas.fa-bars {
+  transition: 0.5s;
+  color: #3389e6;
+}
+header .fas.fa-bars:hover {
+  color: #1459a3;
+}
+header .fas.fa-bars:focus {
+  outline: 0;
+}
+header .banner {
+  position: absolute;
+  color: #ffffff;
+  width: 100%;
+  top: 21%;
+  left: 0;
+  padding: 0 10% 0;
+  transform: translateY(-50%);
+}
+header .banner .title-banner {
+  font-size: 4rem;
+}
+header .banner .content-banner {
+  width: 50%;
+}
+header .banner button {
+  width: 110px;
+  height: 45px;
+}
+
+main .title,
+main .subtitle,
+main .title-small,
+main #vision-mission p,
+main table tbody {
+  color: #082544;
+}
+main .table-custom thead th {
+  background: #082544;
+  color: gainsboro;
+}
+main .table-custom tbody tr:nth-child(odd) {
+  background: gainsboro;
+}
+main .table-custom tbody tr:nth-child(even) {
+  background: #e8f2fc;
+}
+main #vision-mission .vision {
+  font-size: 2rem;
+}
+main #vision-mission .vision::after {
+  content: "";
+  position: relative;
+  top: inherit;
+  left: 50%;
+  width: 100px;
+  height: 3px;
+  opacity: 0.6;
+  background-color: #082544;
+  display: block;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+main #vision-mission .card {
+  border-radius: 10px;
+  height: 160px;
+  border-color: #bbd8f7;
+  border-bottom: 10px inset #1459a3;
+  -webkit-box-shadow: 0 25px 15px -8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 25px 15px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 15px -8px rgba(0, 0, 0, 0.5);
+}
+main #vision-mission .card .mission {
+  font-size: 15px;
+  word-break: keep-all;
+}
+main #project {
+  background: #f8f8f8;
+}
+main #project .subtitle {
+  margin-bottom: 1.5rem;
+}
+main #project button {
+  position: absolute;
+  width: 110px;
+  margin-top: -75px;
+  right: 130px;
+  z-index: 4;
+  height: 48px;
+}
+main #project .card {
+  border-color: #bbd8f7;
+  overflow: hidden;
+}
+main #project .card img {
+  position: relative;
+  z-index: 0;
+}
+main #project .card .caption {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #1459a3d7;
+  color: gainsboro;
+  width: 100%;
+  height: 100%;
+  transform: translateY(80%);
+  transition: 1s;
+  z-index: 1;
+}
+main #project .card:hover .caption {
+  transform: translateY(0);
+}
+main #project .slick-slide {
+  cursor: pointer;
+  outline: none;
+  margin: 0 10px;
+}
+main #project .arrow-prev,
+main #project .arrow-next {
+  position: absolute;
+  top: -65px;
+  cursor: pointer;
+  color: #1459a3;
+  z-index: 1;
+  transition: 0.5s;
+}
+main #project .arrow-prev:hover,
+main #project .arrow-next:hover {
+  color: #3389e6;
+}
+main #project .arrow-prev {
+  right: 300px;
+}
+main #project .arrow-next {
+  right: 260px;
+}
+main #mineral .left {
+  float: left;
+  width: 50%;
+}
+main #mineral .right {
+  float: right;
+  width: 50%;
+}
+main #mineral .list {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  main #vision-mission .card {
+    height: 180px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main #project .card .caption .title-project {
+    font-size: 17px;
+  }
+  main #project .card .caption .content-project {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1063px) {
+  header .banner {
+    padding: 0 9% 0;
+    top: 20%;
+  }
+  header .banner .content-banner {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  header .dropdown-menu {
+    transform: translateX(0);
+  }
+  header .banner {
+    top: 18%;
+    padding: 0 8% 0;
+  }
+  header .banner .title-banner {
+    font-size: 3.6rem;
+  }
+  header .banner .content-banner {
+    width: 70%;
+  }
+
+  main #project .card .caption .title-project {
+    font-size: 18px;
+  }
+  main #project .card .caption .content-project {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .banner {
+    padding-left: 6rem;
+    top: 15%;
+    padding: 0 7% 0;
+  }
+  header .banner .title-banner {
+    font-size: 3.3rem;
+  }
+  header .banner .content-banner {
+    width: 80%;
+  }
+
+  main #project .subtitle {
+    margin-bottom: 6rem;
+  }
+  main #project button {
+    right: 110px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  main #project .subtitle {
+    margin-bottom: 6rem;
+  }
+  main #project .card .caption {
+    transform: translateY(86%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .banner {
+    width: 100%;
+    top: 14%;
+    padding: 0 6% 0;
+  }
+  header .banner .title-banner {
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

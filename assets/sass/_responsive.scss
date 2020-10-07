@@ -1,0 +1,119 @@
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  main {
+    #vision-mission {
+      .card {
+        height: 180px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main {
+    #project {
+      .card {
+        .caption {
+          .title-project {
+            font-size: 17px;
+          }
+          .content-project {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1063px) {
+  header {
+    .banner {
+      padding: 0 9% 0;
+      top: 20%;
+      .content-banner {
+        width: 60%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  header {
+    .dropdown-menu {
+      transform: translateX(0);
+    }
+    .banner {
+      top: 18%;
+      padding: 0 8% 0;
+      .title-banner {
+        font-size: 3.6rem;
+      }
+      .content-banner {
+        width: 70%;
+      }
+    }
+  }
+  main {
+    #project {
+      .card {
+        .caption {
+          .title-project {
+            font-size: 18px;
+          }
+          .content-project {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    .banner {
+      padding-left: 6rem;
+      top: 15%;
+      padding: 0 7% 0;
+      .title-banner {
+        font-size: 3.3rem;
+      }
+      .content-banner {
+        width: 80%;
+      }
+    }
+  }
+  main {
+    #project {
+      .subtitle {
+        margin-bottom: 6rem;
+      }
+      button {
+        right: 110px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  main {
+    #project {
+      .subtitle {
+        margin-bottom: 6rem;
+      }
+      .card {
+        .caption {
+          transform: translateY(86%);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    .banner {
+      width: 100%;
+      top: 14%;
+      padding: 0 6% 0;
+      .title-banner {
+        font-size: 3rem;
+      }
+    }
+  }
+}

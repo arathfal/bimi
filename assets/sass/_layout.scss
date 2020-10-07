@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline-color: $color-secondary;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  top: 0 !important;
+  margin: 0;
+  padding: 0;
+  .button-one {
+    background: $color-primary;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.7s;
+    &:hover {
+      background: #ffffff;
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+  }
+  .button-two {
+    background: #ffffff;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.7s;
+    &:hover {
+      background: $color-primary;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+  }
+  .skiptranslate {
+    display: none !important;
+  }
+  .goog-te-spinner-pos {
+    display: none !important;
+  }
+}
+
+.shrink {
+  .navbar {
+    background: $color-blue-2;
+    height: 80px;
+    .dropdown-toggle,
+    .nav-link {
+      color: $color-primary;
+      transition: 0.5s;
+      &:hover {
+        color: $color-blue-1;
+      }
+    }
+  }
+}
+
+header {
+  background: linear-gradient($transparent-1, $transparent-1),
+    url("../images/header.jpg") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  .navbar-brand {
+    .logo {
+      box-sizing: border-box;
+      border: none;
+      padding: 2px;
+      border-radius: 50%;
+      width: 50px;
+    }
+  }
+  .dropdown-toggle,
+  .nav-link {
+    color: #fff;
+    transition: 0.5s;
+    &:hover {
+      color: $color-blue-1;
+    }
+  }
+  .dropdown-menu {
+    border: none;
+    transform: translateX(-50px);
+    box-shadow: 1px 1px 10px rgb(224, 223, 223);
+    .dropdown-item {
+      color: $color-primary;
+      transition: 0.3s;
+      &:hover {
+        background: transparent;
+        margin-left: 10px;
+      }
+    }
+  }
+  button {
+    width: 88px;
+    height: 40px;
+  }
+  .fas.fa-bars {
+    transition: 0.5s;
+    color: $color-secondary;
+    &:hover {
+      color: $color-primary;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  .banner {
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    top: 21%;
+    left: 0;
+    padding: 0 10% 0;
+    transform: translateY(-50%);
+
+    .title-banner {
+      font-size: 4rem;
+    }
+    .content-banner {
+      width: 50%;
+    }
+    button {
+      width: 110px;
+      height: 45px;
+    }
+  }
+}
+
+main {
+  .title,
+  .subtitle,
+  .title-small,
+  #vision-mission p,
+  table tbody {
+    color: $color-dark-blue;
+  }
+  .table-custom {
+    thead {
+      th {
+        background: $color-dark-blue;
+        color: gainsboro;
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background: gainsboro;
+        }
+        &:nth-child(even) {
+          background: $color-blue-4;
+        }
+      }
+    }
+  }
+
+  #vision-mission {
+    .vision {
+      font-size: 2rem;
+      &::after {
+        content: "";
+        position: relative;
+        top: inherit;
+        left: 50%;
+        width: 100px;
+        height: 3px;
+        opacity: 0.6;
+        background-color: $color-dark-blue;
+        display: block;
+        margin-top: 10px;
+        transform: translateX(-50%);
+      }
+    }
+    .card {
+      border-radius: 10px;
+      height: 160px;
+      border-color: $color-blue-3;
+      border-bottom: 10px inset $color-primary;
+      -webkit-box-shadow: 0 25px 15px -8px $transparent-1;
+      -moz-box-shadow: 0 25px 15px -8px $transparent-1;
+      box-shadow: 0 25px 15px -8px $transparent-1;
+      .mission {
+        font-size: 15px;
+        word-break: keep-all;
+      }
+    }
+  }
+  #project {
+    background: #f8f8f8;
+    .subtitle {
+      margin-bottom: 1.5rem;
+    }
+    button {
+      position: absolute;
+      width: 110px;
+      margin-top: -75px;
+      right: 130px;
+      z-index: 4;
+      height: 48px;
+    }
+    .card {
+      border-color: $color-blue-3;
+      overflow: hidden;
+      img {
+        position: relative;
+        z-index: 0;
+      }
+      .caption {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: $transparent-2;
+        color: gainsboro;
+        width: 100%;
+        height: 100%;
+        transform: translateY(80%);
+        transition: 1s;
+        z-index: 1;
+      }
+      &:hover {
+        .caption {
+          transform: translateY(0);
+        }
+      }
+    }
+    .slick-slide {
+      cursor: pointer;
+      outline: none;
+      margin: 0 10px;
+    }
+    .arrow-prev,
+    .arrow-next {
+      position: absolute;
+      top: -65px;
+      cursor: pointer;
+      color: $color-primary;
+      z-index: 1;
+      transition: 0.5s;
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+    .arrow-prev {
+      right: 300px;
+    }
+    .arrow-next {
+      right: 260px;
+    }
+  }
+  #mineral {
+    .left {
+      float: left;
+      width: 50%;
+    }
+    .right {
+      float: right;
+      width: 50%;
+    }
+    .list {
+      font-size: 15px;
+    }
+  }
+}
