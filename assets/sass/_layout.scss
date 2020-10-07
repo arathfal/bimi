@@ -68,6 +68,7 @@ header {
   background-size: cover;
   min-height: 100vh;
   width: 100%;
+  position: relative;
   .navbar-brand {
     .logo {
       box-sizing: border-box;
@@ -116,7 +117,7 @@ header {
     position: absolute;
     color: #ffffff;
     width: 100%;
-    top: 21%;
+    top: 50%;
     left: 0;
     padding: 0 10% 0;
     transform: translateY(-50%);
@@ -193,7 +194,7 @@ main {
     }
   }
   #project {
-    background: #f8f8f8;
+    background: $light-grey;
     .subtitle {
       margin-bottom: 1.5rem;
     }
@@ -265,6 +266,13 @@ main {
     }
     .list {
       font-size: 15px;
+    }
+  }
+  #company {
+    background: $light-grey;
+    .card {
+      box-shadow: 1px 1px 15px -5px gray, -1px -1px 15px -5px gray;
+      border-radius: $border-radius * 0.23;
     }
   }
 }

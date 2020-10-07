@@ -65,6 +65,7 @@ header {
   background-size: cover;
   min-height: 100vh;
   width: 100%;
+  position: relative;
 }
 header .navbar-brand .logo {
   box-sizing: border-box;
@@ -113,7 +114,7 @@ header .banner {
   position: absolute;
   color: #ffffff;
   width: 100%;
-  top: 21%;
+  top: 50%;
   left: 0;
   padding: 0 10% 0;
   transform: translateY(-50%);
@@ -247,6 +248,13 @@ main #mineral .right {
 main #mineral .list {
   font-size: 15px;
 }
+main #company {
+  background: #f8f8f8;
+}
+main #company .card {
+  box-shadow: 1px 1px 15px -5px gray, -1px -1px 15px -5px gray;
+  border-radius: 0.69rem;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   main #vision-mission .card {
@@ -264,7 +272,6 @@ main #mineral .list {
 @media only screen and (max-width: 1063px) {
   header .banner {
     padding: 0 9% 0;
-    top: 20%;
   }
   header .banner .content-banner {
     width: 60%;
@@ -275,7 +282,6 @@ main #mineral .list {
     transform: translateX(0);
   }
   header .banner {
-    top: 18%;
     padding: 0 8% 0;
   }
   header .banner .title-banner {
@@ -295,7 +301,6 @@ main #mineral .list {
 @media only screen and (max-width: 767px) {
   header .banner {
     padding-left: 6rem;
-    top: 15%;
     padding: 0 7% 0;
   }
   header .banner .title-banner {
@@ -323,7 +328,6 @@ main #mineral .list {
 @media only screen and (max-width: 600px) {
   header .banner {
     width: 100%;
-    top: 14%;
     padding: 0 6% 0;
   }
   header .banner .title-banner {
