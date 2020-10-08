@@ -45,4 +45,33 @@ $(document).ready(() => {
       },
     ],
   });
+  //Table Home
+  const rowsPerPage = 5;
+  const rows = $("#tableAnalysist tbody tr");
+  const rowsCount = rows.length;
+  const pageCount = Math.ceil(rowsCount / rowsPerPage);
+  const numbers = $(".page-number");
+
+  for (var i = 0; i < pageCount; i++) {
+    numbers.append('<li><a href="#">' + (i + 1) + "</a></li>");
+  }
+
+  $(".page-number li:first-child a").addClass("active");
+
+  displayRows(1);
+
+  $(".page-number li a").click(function (e) {
+    var $this = $(this);
+    e.preventDefault();
+    $(".page-number li a").removeClass("active");
+    $this.addClass("active");
+    displayRows($this.text());
+  });
+
+  function displayRows(index) {
+    var start = (index - 1) * rowsPerPage;
+    var end = start + rowsPerPage;
+    rows.hide();
+    rows.slice(start, end).show();
+  }
 });

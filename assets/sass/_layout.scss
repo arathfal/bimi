@@ -64,7 +64,7 @@ body {
 
 header {
   background: linear-gradient($transparent-1, $transparent-1),
-    url("../images/header.jpg") no-repeat center fixed;
+    url("../images/backgroud/header.jpg") no-repeat center fixed;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -144,6 +144,7 @@ main {
     color: $color-dark-blue;
   }
   .table-custom {
+    border: 1px solid $color-blue-1;
     thead {
       th {
         background: $color-dark-blue;
@@ -153,7 +154,7 @@ main {
     tbody {
       tr {
         &:nth-child(odd) {
-          background: gainsboro;
+          background: #fff;
         }
         &:nth-child(even) {
           background: $color-blue-4;
@@ -162,7 +163,40 @@ main {
     }
   }
 
+  .pagination {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .page-number {
+      padding: 0;
+      margin: 0 2rem;
+      list-style-type: none;
+      display: flex;
+      li {
+        padding: 0 3px;
+        a {
+          color: #fff;
+          background: $color-primary;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          opacity: 0.7;
+          &:hover {
+            opacity: 1;
+          }
+          &.active {
+            opacity: 1;
+            background: $color-dark-blue;
+          }
+        }
+      }
+    }
+  }
+
   #vision-mission {
+    background: url("../images/backgroud/17580.jpg") no-repeat center;
+    background-size: cover;
     .vision {
       font-size: 2rem;
       &::after {
@@ -194,7 +228,9 @@ main {
     }
   }
   #project {
-    background: $light-grey;
+    background: linear-gradient($transparent-1, $transparent-1),
+      url("../images/backgroud/bg-1.jpg") no-repeat center;
+    background-size: cover;
     .subtitle {
       margin-bottom: 1.5rem;
     }
@@ -221,7 +257,7 @@ main {
         color: gainsboro;
         width: 100%;
         height: 100%;
-        transform: translateY(80%);
+        transform: translateY(85%);
         transition: 1s;
         z-index: 1;
       }
@@ -241,7 +277,7 @@ main {
       position: absolute;
       top: -65px;
       cursor: pointer;
-      color: $color-primary;
+      color: gainsboro;
       z-index: 1;
       transition: 0.5s;
       &:hover {
@@ -256,6 +292,8 @@ main {
     }
   }
   #mineral {
+    background: url("../images/backgroud/3459071.jpg") no-repeat center;
+    background-size: cover;
     .left {
       float: left;
       width: 50%;
@@ -269,10 +307,67 @@ main {
     }
   }
   #company {
-    background: $light-grey;
-    .card {
-      box-shadow: 1px 1px 15px -5px gray, -1px -1px 15px -5px gray;
-      border-radius: $border-radius * 0.15;
+    background: url("../images/backgroud/25372.jpg") no-repeat center;
+    background-size: cover;
+    ul {
+      padding: 0;
+      li {
+        padding: 0;
+        list-style: none;
+        .btn-navigation {
+          background: $color-blue-2;
+          color: #ffffff;
+          width: 100%;
+          &[aria-expanded="true"] {
+            background: $color-dark-blue;
+          }
+          &:focus {
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .box {
+      cursor: pointer;
+      perspective: 1000px;
+      width: 300px;
+      height: 300px;
+      .box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+      &:hover {
+        .box-inner {
+          transform: rotateY(180deg);
+        }
+      }
+      .box-front,
+      .box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .box-front {
+        background: $color-dark-blue;
+        color: #fff;
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      .box-back {
+        padding: 6rem 0;
+        background-color: $color-primary;
+        color: #fff;
+        transform: rotateY(180deg);
+      }
     }
   }
 }
