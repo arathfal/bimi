@@ -374,5 +374,53 @@ main {
   #licences {
     background: url("../images/backgroud/25101.jpg") no-repeat center;
     background-size: cover;
+    table {
+      thead {
+        th {
+          text-align: center;
+          background: $color-dark-blue;
+          color: #ffffff;
+          border-right: 5px solid $light-grey;
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+      tbody {
+        tr {
+          background: transparent;
+          color: $color-dark-blue;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .footer-top {
+    background: $color-dark-blue-2;
+    .logo-footer {
+      width: 75px;
+    }
+    .name,
+    a,
+    p {
+      color: rgb(216, 216, 216);
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-bottom: 5px;
+        a {
+          text-decoration: none;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background: $color-dark-blue-3;
   }
 }
