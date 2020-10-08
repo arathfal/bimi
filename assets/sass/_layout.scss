@@ -422,5 +422,8 @@ footer {
   }
   .footer-bottom {
     background: $color-dark-blue-3;
+    h6 {
+      font-size: 14px;
+    }
   }
 }
