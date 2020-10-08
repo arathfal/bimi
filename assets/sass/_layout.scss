@@ -307,7 +307,8 @@ main {
     }
   }
   #company {
-    background: url("../images/backgroud/25372.jpg") no-repeat center;
+    background: $light-grey url("../images/backgroud/shape-51.svg") no-repeat
+      center;
     background-size: cover;
     ul {
       padding: 0;
