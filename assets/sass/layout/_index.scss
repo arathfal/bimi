@@ -73,86 +73,6 @@ body {
   color: $color-blue-1 !important;
 }
 
-header {
-  background: linear-gradient($transparent-1, $transparent-1),
-    url("../images/backgroud/header.jpg") no-repeat center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  .navbar-brand {
-    .logo {
-      box-sizing: border-box;
-      border: none;
-      padding: 2px;
-      border-radius: 50%;
-      width: 50px;
-    }
-  }
-  .nav-link {
-    &.active {
-      border-bottom: 2px solid $color-blue-1;
-      color: $color-blue-1;
-    }
-  }
-  .dropdown-toggle,
-  .nav-link {
-    color: #fff;
-    transition: 0.5s;
-    &:hover {
-      color: $color-blue-1;
-      border-bottom: 2px solid $color-blue-1;
-    }
-  }
-  .dropdown-menu {
-    border: none;
-    transform: translateX(-50px);
-    box-shadow: 1px 1px 10px rgb(224, 223, 223);
-    .dropdown-item {
-      color: $color-primary;
-      transition: 0.3s;
-      &:hover {
-        background: transparent;
-        margin-left: 10px;
-      }
-    }
-  }
-  button {
-    width: 88px;
-    height: 40px;
-  }
-  .fas.fa-bars {
-    transition: 0.5s;
-    color: $color-secondary;
-    &:hover {
-      color: $color-primary;
-    }
-    &:focus {
-      outline: 0;
-    }
-  }
-  .banner {
-    position: absolute;
-    color: #ffffff;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    padding: 0 10% 0;
-    transform: translateY(-50%);
-
-    .title-banner {
-      font-size: 4rem;
-    }
-    .content-banner {
-      width: 50%;
-    }
-    button {
-      width: 110px;
-      height: 45px;
-    }
-  }
-}
-
 main {
   .title,
   .subtitle,
@@ -331,24 +251,9 @@ main {
     .card {
       background: transparent;
     }
-    // .overlay {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   background: $transparent-3;
-    //   clip-path: circle(50% at 50% 50%);
-    //   z-index: 1;
-    // }
     img {
       clip-path: circle(50% at 50% 50%);
     }
-    // .caption-product {
-    //   position: absolute;
-    //   bottom: 0;
-    //   z-index: 2;
-    // }
   }
   #company {
     background: $light-grey url("../images/backgroud/shape-51.svg") no-repeat

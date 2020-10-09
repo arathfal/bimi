@@ -1,0 +1,31 @@
+#products-page {
+  background: url("../images/backgroud/3459071.jpg") no-repeat center;
+  background-size: cover;
+  ul {
+    li {
+      padding: 0;
+      list-style: none;
+      .btn-products {
+        color: $color-secondary;
+        width: 100%;
+        font-weight: 600;
+        &:hover {
+          color: $color-primary;
+        }
+        &[aria-expanded="true"] {
+          color: $color-primary;
+          border-bottom: 2px solid $color-primary;
+        }
+        &:focus {
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .card {
+    p {
+      font-size: 14px;
+    }
+  }
+}
