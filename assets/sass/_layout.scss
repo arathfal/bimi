@@ -53,13 +53,24 @@ body {
     height: 80px;
     .dropdown-toggle,
     .nav-link {
-      color: $color-primary;
+      color: $color-secondary;
       transition: 0.5s;
       &:hover {
-        color: $color-blue-1;
+        color: $color-primary;
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+    .nav-link {
+      &.active {
+        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
       }
     }
   }
+}
+
+.txt-blue {
+  color: $color-blue-1 !important;
 }
 
 header {
@@ -78,12 +89,19 @@ header {
       width: 50px;
     }
   }
+  .nav-link {
+    &.active {
+      border-bottom: 2px solid $color-blue-1;
+      color: $color-blue-1;
+    }
+  }
   .dropdown-toggle,
   .nav-link {
     color: #fff;
     transition: 0.5s;
     &:hover {
       color: $color-blue-1;
+      border-bottom: 2px solid $color-blue-1;
     }
   }
   .dropdown-menu {
@@ -306,6 +324,32 @@ main {
       font-size: 15px;
     }
   }
+  #product {
+    background: url("../images/backgroud/25552.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    .card {
+      background: transparent;
+    }
+    // .overlay {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: $transparent-3;
+    //   clip-path: circle(50% at 50% 50%);
+    //   z-index: 1;
+    // }
+    img {
+      clip-path: circle(50% at 50% 50%);
+    }
+    // .caption-product {
+    //   position: absolute;
+    //   bottom: 0;
+    //   z-index: 2;
+    // }
+  }
   #company {
     background: $light-grey url("../images/backgroud/shape-51.svg") no-repeat
       center;
@@ -374,25 +418,6 @@ main {
   #licences {
     background: url("../images/backgroud/25101.jpg") no-repeat center;
     background-size: cover;
-    table {
-      thead {
-        th {
-          text-align: center;
-          background: $color-dark-blue;
-          color: #ffffff;
-          border-right: 5px solid $light-grey;
-          &:last-child {
-            border: none;
-          }
-        }
-      }
-      tbody {
-        tr {
-          background: transparent;
-          color: $color-dark-blue;
-        }
-      }
-    }
   }
 }
 
