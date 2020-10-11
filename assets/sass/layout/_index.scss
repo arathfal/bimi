@@ -50,19 +50,16 @@ body {
 .shrink {
   .navbar {
     background: $color-blue-2;
-    height: 80px;
     .dropdown-toggle,
     .nav-link {
       color: $color-secondary;
       transition: 0.5s;
       &:hover {
         color: $color-primary;
-        border-bottom: 2px solid $color-primary;
       }
     }
     .nav-link {
       &.active {
-        border-bottom: 2px solid $color-primary;
         color: $color-primary;
       }
     }

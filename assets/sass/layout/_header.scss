@@ -10,7 +10,6 @@ header {
   }
   .nav-link {
     &.active {
-      border-bottom: 2px solid $color-blue-1;
       color: $color-blue-1;
     }
   }
@@ -20,7 +19,6 @@ header {
     transition: 0.5s;
     &:hover {
       color: $color-blue-1;
-      border-bottom: 2px solid $color-blue-1;
     }
   }
   .dropdown-menu {
@@ -78,9 +76,9 @@ header {
       }
     }
   }
-  &#products {
+  &#side {
     background: linear-gradient($transparent-4, $transparent-4),
-      url("/assets/images/backgroud/header-products.jpg") no-repeat;
+      url("/assets/images/backgroud/header-products.jpg") no-repeat center;
     background-size: cover;
     min-height: 75vh;
     width: 100%;

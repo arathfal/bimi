@@ -1,0 +1,52 @@
+.paragraph {
+  text-indent: 3rem;
+  text-align: justify;
+}
+
+#profil {
+  background: url("../images/backgroud/3459071.jpg") no-repeat center;
+  background-size: cover;
+}
+#value {
+  background: url("../images/backgroud/17580.jpg") no-repeat center;
+  background-size: cover;
+  li {
+    list-style: none;
+  }
+}
+#otherAbout {
+  ul {
+    border-bottom: 1px solid $color-primary;
+    li {
+      padding: 0;
+      list-style: none;
+      .btn-about {
+        background: transparent;
+        color: $color-dark-blue;
+        width: 100%;
+        padding: 10px 15px;
+        &:hover,
+        &[aria-expanded="true"] {
+          font-weight: 900;
+          border-bottom: 2px solid $color-primary;
+        }
+        &:focus {
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  img {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+}
+.bgr-primary {
+  background: $color-primary;
+}
+.bgr-secondary {
+  background: $color-secondary;
+}
+.txt-dark {
+  color: $color-dark-blue;
+}

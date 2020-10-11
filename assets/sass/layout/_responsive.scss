@@ -26,10 +26,12 @@
 
 @media only screen and (max-width: 1063px) {
   header {
-    .banner {
-      padding: 0 9% 0;
-      .content-banner {
-        width: 60%;
+    &#home {
+      .banner {
+        padding: 0 9% 0;
+        .content-banner {
+          width: 60%;
+        }
       }
     }
   }
@@ -39,13 +41,15 @@
     .dropdown-menu {
       transform: translateX(0);
     }
-    .banner {
-      padding: 0 8% 0;
-      .title-banner {
-        font-size: 3.6rem;
-      }
-      .content-banner {
-        width: 70%;
+    &#home {
+      .banner {
+        padding: 0 8% 0;
+        .title-banner {
+          font-size: 3.6rem;
+        }
+        .content-banner {
+          width: 70%;
+        }
       }
     }
   }
@@ -66,14 +70,16 @@
 }
 @media only screen and (max-width: 767px) {
   header {
-    .banner {
-      padding-left: 6rem;
-      padding: 0 7% 0;
-      .title-banner {
-        font-size: 3.3rem;
-      }
-      .content-banner {
-        width: 80%;
+    &#home {
+      .banner {
+        padding-left: 6rem;
+        padding: 0 7% 0;
+        .title-banner {
+          font-size: 3.3rem;
+        }
+        .content-banner {
+          width: 80%;
+        }
       }
     }
   }
@@ -104,12 +110,22 @@
 }
 @media only screen and (max-width: 600px) {
   header {
-    .banner {
-      width: 100%;
-      padding: 0 6% 0;
-      .title-banner {
-        font-size: 3rem;
+    &#home {
+      .banner {
+        width: 100%;
+        padding: 0 6% 0;
+        .title-banner {
+          font-size: 3rem;
+        }
+        .content-banner {
+          width: 90%;
+        }
       }
+    }
+    &#side {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("/assets/images/backgroud/mbl-header-products.jpg") no-repeat center;
+      background-size: cover;
     }
   }
 }
