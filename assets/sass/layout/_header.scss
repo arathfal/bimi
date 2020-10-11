@@ -50,7 +50,7 @@ header {
   }
   &#home {
     background: linear-gradient($transparent-1, $transparent-1),
-      url("/assets/images/backgroud/header.jpg") no-repeat center fixed;
+      url("../images/backgroud/header.jpg") no-repeat center fixed;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
@@ -78,7 +78,7 @@ header {
   }
   &#side {
     background: linear-gradient($transparent-4, $transparent-4),
-      url("/assets/images/backgroud/header-products.jpg") no-repeat center;
+      url("../images/backgroud/header-products.jpg") no-repeat center;
     background-size: cover;
     min-height: 75vh;
     width: 100%;
