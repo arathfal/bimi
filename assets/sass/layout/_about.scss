@@ -10,8 +10,15 @@
 #value {
   background: url("../images/backgroud/17580.jpg") no-repeat center;
   background-size: cover;
-  li {
-    list-style: none;
+  .circle-title {
+    background: $color-primary;
+    color: #ffffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .title {
+    width: 50%;
   }
 }
 #otherAbout {
@@ -42,23 +49,4 @@
   img {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   }
-}
-.bgr-primary {
-  background: $color-primary;
-}
-.bgr-secondary {
-  background: $color-secondary;
-}
-.txt-dark {
-  color: $color-dark-blue;
-}
-
-.white-trans {
-  background: rgba(255, 255, 255, 0.5);
-}
-.primary-trans {
-  background: rgba($color-primary, 0.5);
-}
-.secondary-trans {
-  background: rgba($color-secondary, 0.5);
 }
