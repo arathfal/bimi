@@ -3,15 +3,15 @@ $(document).ready(() => {
   $(window).scroll(() => {
     if ($(document).scrollTop() > 100) {
       $(".navbar").removeClass("fadeIn");
-      $("body").addClass("shrink");
       $("#buttonNav").removeClass("button-one");
       $("#buttonNav").addClass("button-two");
+      $("body").addClass("shrink");
       $(".navbar").addClass("animated fadeInDown");
     } else {
       $(".navbar").removeClass("fadeInDown");
-      $("body").removeClass("shrink");
       $("#buttonNav").removeClass("button-two");
       $("#buttonNav").addClass("button-one");
+      $("body").removeClass("shrink");
       $(".navbar").addClass("animated fadeIn");
     }
   });
