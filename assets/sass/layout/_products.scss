@@ -1,20 +1,21 @@
 #products-page {
-  background: url("../images/backgroud/3132.jpg") no-repeat center;
+  background: url("../images/backgroud/17580.jpg") no-repeat center;
   background-size: cover;
   ul {
     li {
       padding: 0;
       list-style: none;
       .btn-products {
-        color: $color-secondary;
+        color: $color-primary;
         width: 100%;
         font-weight: 600;
+        font-size: 17px;
         &:hover {
-          color: $color-primary;
+          color: $color-yellow-1;
         }
         &[aria-expanded="true"] {
-          color: $color-primary;
-          border-bottom: 2px solid $color-primary;
+          color: $color-yellow-1;
+          border-bottom: 2px solid $color-yellow-1;
         }
         &:focus {
           outline: 0;
@@ -23,9 +24,20 @@
       }
     }
   }
-  .card {
-    p {
-      font-size: 14px;
+  figure {
+    background: transparent;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid $color-primary;
+    img {
+      width: 100%;
+      height: 100%;
+      clip-path: circle(50% at 50% 50%);
     }
+  }
+  p {
+    font-size: 14px;
   }
 }

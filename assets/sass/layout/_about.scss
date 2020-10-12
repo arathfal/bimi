@@ -10,12 +10,19 @@
 #value {
   background: url("../images/backgroud/17580.jpg") no-repeat center;
   background-size: cover;
-  .circle-title {
+  .circle-title,
+  .square-title {
     background: $color-primary;
     color: #ffffff;
     width: 200px;
     height: 200px;
+    animation: inOut 5s linear infinite;
+  }
+  .circle-title {
     border-radius: 50%;
+  }
+  .square-title {
+    border-radius: $border-radius * 0.2;
   }
   .title {
     width: 50%;
@@ -47,6 +54,24 @@
     }
   }
   img {
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(69% 0%, 100% 25%, 100% 99%, 22% 100%, 0% 78%, 1% 0%);
+  }
+}
+
+@keyframes inOut {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
