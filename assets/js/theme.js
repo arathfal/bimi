@@ -1,12 +1,17 @@
 $(document).ready(() => {
+  AOS.init();
   $(window).scroll(() => {
     if ($(document).scrollTop() > 100) {
       $(".navbar").removeClass("fadeIn");
       $("body").addClass("shrink");
+      $("#buttonNav").removeClass("button-one");
+      $("#buttonNav").addClass("button-two");
       $(".navbar").addClass("animated fadeInDown");
     } else {
       $(".navbar").removeClass("fadeInDown");
       $("body").removeClass("shrink");
+      $("#buttonNav").removeClass("button-two");
+      $("#buttonNav").addClass("button-one");
       $(".navbar").addClass("animated fadeIn");
     }
   });
@@ -17,8 +22,8 @@ $(document).ready(() => {
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: '<i class="fa-2x fas fa-long-arrow-alt-left arrow-prev"></i>',
-    nextArrow: '<i class="fa-2x fas fa-long-arrow-alt-right arrow-next"></i>',
+    prevArrow: '<i class="fa-2x fas fa-long-arrow-alt-left arrow-prev" data-aos="fade-left"></i>',
+    nextArrow: '<i class="fa-2x fas fa-long-arrow-alt-right arrow-next" data-aos="fade-left"></i>',
     responsive: [
       {
         breakpoint: 1024,

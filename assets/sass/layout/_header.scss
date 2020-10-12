@@ -17,6 +17,7 @@ header {
   .nav-link {
     color: #fff;
     transition: 0.5s;
+    font-size: 18px;
     &:hover {
       color: $color-blue-1;
     }
@@ -35,8 +36,8 @@ header {
     }
   }
   button {
-    width: 88px;
-    height: 40px;
+    width: 100px;
+    height: 45px;
   }
   .fas.fa-bars {
     transition: 0.5s;

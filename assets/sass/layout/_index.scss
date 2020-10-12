@@ -46,13 +46,18 @@ body {
     display: none !important;
   }
 }
+main {
+  overflow: hidden;
+}
 
 .shrink {
   .navbar {
-    background: $color-blue-2;
+    background: #fff;
+    box-shadow: 2px 2px 12px #888;
+    padding: 16px;
     .dropdown-toggle,
     .nav-link {
-      color: $color-secondary;
+      color: $color-blue-1;
       transition: 0.5s;
       &:hover {
         color: $color-primary;
@@ -74,26 +79,33 @@ main {
   .title,
   .subtitle,
   .title-small,
-  #vision-mission p,
+  #vision-mission p {
+    color: $color-primary;
+  }
   table tbody {
     color: $color-dark-blue;
   }
   .table-custom {
-    border: 1px solid $color-blue-1;
     thead {
       th {
         background: $color-dark-blue;
         color: gainsboro;
+        border-right: 5px solid $light-grey;
+        &:last-child {
+          border: none;
+        }
       }
     }
     tbody {
       tr {
-        &:nth-child(odd) {
-          background: #fff;
-        }
-        &:nth-child(even) {
-          background: $color-blue-4;
-        }
+        background: transparent;
+        // &:nth-child(odd) {
+        //   background: #fff;
+        // }
+        // &:nth-child(even) {
+        //   background: $color-blue-4;
+        // }
+        border-bottom: 1px solid $color-blue-3;
       }
     }
   }
@@ -242,7 +254,7 @@ main {
     }
   }
   #product {
-    background: url("../images/backgroud/25552.jpg") no-repeat center;
+    background: url("../images/backgroud/3132.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     .card {
@@ -262,11 +274,22 @@ main {
         padding: 0;
         list-style: none;
         .btn-navigation {
-          background: $color-blue-2;
-          color: #ffffff;
+          background-color: transparent;
+          color: $color-primary;
           width: 100%;
+          font-weight: 900;
+          border-radius: 0;
           &[aria-expanded="true"] {
-            background: $color-dark-blue;
+            background: $color-primary;
+            color: #fff;
+            &::before {
+              content: "";
+              position: relative;
+              display: inline;
+              width: 3px;
+              background: $color-primary;
+              height: 100%;
+            }
           }
           &:focus {
             outline: 0;
