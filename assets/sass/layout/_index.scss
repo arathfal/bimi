@@ -57,7 +57,7 @@ main {
     padding: 16px;
     .dropdown-toggle,
     .nav-link {
-      color: $color-blue-1;
+      color: $color-dark-1;
       transition: 0.5s;
       &:hover {
         color: $color-primary;
@@ -71,10 +71,6 @@ main {
   }
 }
 
-.txt-blue {
-  color: $color-blue-1 !important;
-}
-
 main {
   .title,
   .subtitle,
@@ -83,12 +79,12 @@ main {
     color: $color-primary;
   }
   table tbody {
-    color: $color-dark-blue;
+    color: $color-dark-1;
   }
   .table-custom {
     thead {
       th {
-        background: $color-dark-blue;
+        background: $color-dark-1;
         color: gainsboro;
         border-right: 5px solid $light-grey;
         &:last-child {
@@ -105,7 +101,7 @@ main {
         // &:nth-child(even) {
         //   background: $color-blue-4;
         // }
-        border-bottom: 1px solid $color-blue-3;
+        border-bottom: 1px solid rgba($color-dark-1, 0.5);
       }
     }
   }
@@ -134,7 +130,7 @@ main {
           }
           &.active {
             opacity: 1;
-            background: $color-dark-blue;
+            background: $color-primary;
           }
         }
       }
@@ -142,7 +138,7 @@ main {
   }
 
   #vision-mission {
-    background: url("../images/backgroud/17580.jpg") no-repeat center;
+    background: url("../images/backgroud/3132.jpg") no-repeat center;
     background-size: cover;
     .vision {
       font-size: 2rem;
@@ -154,7 +150,7 @@ main {
         width: 100px;
         height: 3px;
         opacity: 0.6;
-        background-color: $color-dark-blue;
+        background-color: $color-dark-1;
         display: block;
         margin-top: 10px;
         transform: translateX(-50%);
@@ -163,7 +159,7 @@ main {
     .card {
       border-radius: 10px;
       height: 160px;
-      border-color: $color-blue-3;
+      border-color: $color-secondary;
       border-bottom: 10px inset $color-primary;
       -webkit-box-shadow: 0 25px 15px -8px $transparent-1;
       -moz-box-shadow: 0 25px 15px -8px $transparent-1;
@@ -190,7 +186,7 @@ main {
       height: 48px;
     }
     .card {
-      border-color: $color-blue-3;
+      border-color: $color-secondary;
       overflow: hidden;
       img {
         position: relative;
@@ -201,7 +197,7 @@ main {
         left: 0;
         position: absolute;
         background: $transparent-2;
-        color: gainsboro;
+        color: $color-dark-1;
         width: 100%;
         height: 100%;
         transform: translateY(85%);
@@ -239,8 +235,9 @@ main {
     }
   }
   #mineral {
-    background: url("../images/backgroud/3459071.jpg") no-repeat center;
-    background-size: cover;
+    background: #ffffff;
+    // background: url("../images/backgroud/3459071.jpg") no-repeat center;
+    // background-size: cover;
     .left {
       float: left;
       width: 50%;
@@ -284,7 +281,7 @@ main {
           border-radius: 0;
           transition: 0.5s;
           &:hover {
-            background: $color-secondary;
+            background: $color-yellow-1;
             color: #fff;
           }
           &[aria-expanded="true"] {
@@ -301,14 +298,16 @@ main {
     .box {
       cursor: pointer;
       perspective: 1000px;
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
+      border-radius: $border-radius * 0.2;
       .box-inner {
         position: relative;
         width: 100%;
         height: 100%;
         text-align: center;
         transition: transform 1s;
+        border-radius: $border-radius * 0.2;
         transform-style: preserve-3d;
       }
       &:hover {
@@ -321,19 +320,21 @@ main {
         position: absolute;
         width: 100%;
         height: 100%;
+        border-radius: $border-radius * 0.2;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
       .box-front {
-        background: $color-dark-blue;
+        background: $color-dark-1;
         color: #fff;
         img {
-          width: 300px;
-          height: 300px;
+          width: 250px;
+          border-radius: $border-radius * 0.2;
+          height: 250px;
         }
       }
       .box-back {
-        padding: 7rem 0;
+        padding: 5rem 0;
         background-color: $color-primary;
         color: #fff;
         transform: rotateY(180deg);
@@ -348,7 +349,7 @@ main {
 
 footer {
   .footer-top {
-    background: $color-dark-blue-2;
+    background: $color-dark-2;
     .logo-footer {
       width: 75px;
     }
@@ -371,7 +372,7 @@ footer {
     }
   }
   .footer-bottom {
-    background: $color-dark-blue-3;
+    background: $color-dark-3;
     h6 {
       font-size: 14px;
     }

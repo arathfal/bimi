@@ -10,7 +10,7 @@ header {
   }
   .nav-link {
     &.active {
-      color: $color-blue-1;
+      color: $color-primary;
     }
   }
   .dropdown-toggle,
@@ -19,7 +19,7 @@ header {
     transition: 0.5s;
     font-size: 18px;
     &:hover {
-      color: $color-blue-1;
+      color: $color-primary;
     }
   }
   .dropdown-menu {
@@ -41,9 +41,9 @@ header {
   }
   .fas.fa-bars {
     transition: 0.5s;
-    color: $color-secondary;
+    color: $color-primary;
     &:hover {
-      color: $color-primary;
+      color: $color-secondary;
     }
     &:focus {
       outline: 0;
