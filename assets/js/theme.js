@@ -1,20 +1,20 @@
 $(document).ready(() => {
-  AOS.init();
   $(window).scroll(() => {
     if ($(document).scrollTop() > 100) {
       $(".navbar").removeClass("fadeIn");
       $("#buttonNav").removeClass("button-one");
-      $("#buttonNav").addClass("button-two");
       $("body").addClass("shrink");
       $(".navbar").addClass("animated fadeInDown");
+      $("#buttonNav").addClass("button-two");
     } else {
       $(".navbar").removeClass("fadeInDown");
-      $("#buttonNav").removeClass("button-two");
-      $("#buttonNav").addClass("button-one");
       $("body").removeClass("shrink");
+      $("#buttonNav").removeClass("button-two");
       $(".navbar").addClass("animated fadeIn");
+      $("#buttonNav").addClass("button-one");
     }
   });
+  AOS.init();
   $("#project-slider").slick({
     infinite: true,
     speed: 1000,
