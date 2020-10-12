@@ -254,13 +254,16 @@ main {
     }
   }
   #product {
-    background: url("../images/backgroud/3132.jpg") no-repeat center;
+    background: linear-gradient($transparent-4, $transparent-4),
+      url("../images/backgroud/bg-3.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     .card {
       background: transparent;
     }
     img {
+      width: 200px;
+      height: 200px;
       clip-path: circle(50% at 50% 50%);
     }
   }
@@ -279,17 +282,14 @@ main {
           width: 100%;
           font-weight: 900;
           border-radius: 0;
+          transition: 0.5s;
+          &:hover {
+            background: $color-secondary;
+            color: #fff;
+          }
           &[aria-expanded="true"] {
             background: $color-primary;
             color: #fff;
-            &::before {
-              content: "";
-              position: relative;
-              display: inline;
-              width: 3px;
-              background: $color-primary;
-              height: 100%;
-            }
           }
           &:focus {
             outline: 0;
