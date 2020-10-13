@@ -150,9 +150,24 @@
         }
       }
     }
-    &#side {
+    &#products {
       background: linear-gradient($transparent-4, $transparent-4),
         url("../images/backgroud/mbl-header-products.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &#about {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/mbl-header-about.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &#corporate {
+      background: linear-gradient($transparent-1, $transparent-1),
+        url("../images/backgroud/mbl-header-corporate.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &#contact {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/mbl-header-contact.jpg") no-repeat center;
       background-size: cover;
     }
   }

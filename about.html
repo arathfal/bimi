@@ -13,8 +13,6 @@
       href="vendor/bootstrap-4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.min.css" />
-    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="vendor/aos-master/dist/aos.css" />
     <link
       rel="shortcut icon"
@@ -24,7 +22,7 @@
     <title>BIMI - About</title>
   </head>
   <body>
-    <header id="side">
+    <header id="about">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container d-flex justify-content-between">
           <a class="navbar-brand" href="index.html"
@@ -98,7 +96,7 @@
               </li>
               <li class="nav-item">
                 <a href="contact.html" class="nav-link"
-                  ><button class="button-one"><strong>Contact</strong></button>
+                  ><button id="buttonNav" class="button-one"><strong>Contact</strong></button>
                 </a>
               </li>
             </ul>
@@ -167,8 +165,7 @@
           </div>
         </div>
       </article>
-      <article id="value">
-          <section id="one" class="py-5">
+      <article id="value" class="py-5">
           <h1 class="title text-center mx-auto mb-5" data-aos="fade-down" data-aos-duration="1200">Our Values</h1>
             <div class="container">
               <div class="row">
@@ -208,64 +205,13 @@
                     </div>
                   </div>
                 </div>
-            </div>
-          </section>     
-          <section id="two" class="py-5">
-            <div class="container text-light">
-              <div class="row">
-                <div class="col-12 col-lg-8">
-                  <h4 class="mb-5 mt-0 mt-lg-5 pt-0 pt-lg-5 text-center" data-aos="fade-up" data-aos-duration="1700">The processes and structures used by the Company in managing the Company are based on the principles of <strong class="title">Good Corporate Governance</strong></h4>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="text-center">
-                    <h4 class="square-title d-flex justify-content-center align-items-center mx-auto mb-3">Transparency</h4>
-                    <p>Openness in carrying out the decision-making process
-                        and openness in presenting material and relevant information regarding
-                      Company</p>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 offset-lg-2 mb-4" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="text-center">
-                    <h4 class="square-title d-flex justify-content-center align-items-center mx-auto mb-3">Independence</h4>
-                    <p>A situation where the Company is managed professionally
-                          without conflict of interest and influence or pressure from any party that is not
-                          in accordance with the applicable laws and principles
-                          healthy corporation</p>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 offset-lg-1 mb-4" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="text-center">
-                    <h4 class="square-title d-flex justify-content-center align-items-center mx-auto mb-3">Accountability</h4>
-                    <p>
-                          Clarity of functions, implementation and accountability
-                          Company so that the management of the company is carried out effectively</p>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-4 mx-auto mx-lg-0 mr-0 mr-lg-auto" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="text-center">
-                    <h4 class="square-title d-flex justify-content-center align-items-center mx-auto mb-3">Responsibility</h4>
-                    <p>The suitability in the management of the Company towards
-                          prevailing laws and regulations and corporate principles
-                          healthy</p>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-4 mx-auto mx-lg-0 mr-0 mr-lg-auto" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="text-center">
-                    <h4 class="square-title d-flex justify-content-center align-items-center mx-auto mb-3">Fairness</h4>
-                    <p>Fairness and equality in fulfilling stakeholder rights
-                          interests arising based on agreements and applicable laws and regulations</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+            </div>     
       </article>
       <article id="otherAbout" class="py-5 px-2 px-md-5">
         <div class="container">
           <div class="accordion" id="accordionAbout">
             <ul class="d-flex justify-content-center text-center mb-5 py-3 px-0">
-              <li class="d-inline">
+              <li class="d-inline ml-4">
                 <button
                   class="btn btn-about"
                   type="button"
@@ -275,17 +221,6 @@
                   aria-controls="humanResource"
                 >
                 HUMAN RESOURCE
-                </button>
-              </li>
-              <li class="d-inline mx-2 mx-md-3 mx-lg-4">
-                <button
-                  class="btn btn-about"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#governance"
-                  aria-controls="governance"
-                >
-                GOVERNANCE GUIDELINES
                 </button>
               </li>
               <li class="d-inline">
@@ -328,28 +263,6 @@
                 <p class="paragraph">
                   This corporate strategy forms the basis for the implementation of human resource development programs. The company believes that human resource development is a long-term investment so that the Company is committed to a systematic and sustainable development program to anticipate changing business needs.
                 </p>
-              </div>
-            </div>
-            </div>
-
-            <div
-              id="governance"
-              class="collapse"
-              data-parent="#accordionAbout"
-            >
-            <div class="col-12 c0l-md-11 col-lg-10 mx-auto">
-              <div class="row">
-                <div class="col-12 col-md-6 col-lg-5 d-none d-md-block">
-                  <img src="assets/images/Governance.jpg" alt="Governance" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6 col-lg-7">
-                  <p class="paragraph">
-                    Corporate Governance Guidelines of PT. Bima Mineral Indonesia is the basis for implementing the principles of Transparency, Accountability, Responsibility, Independence and Fairness to improve the company's performance and image.
-                  </p>
-                  <p class="paragraph">
-                    The Guidelines for Corporate Governance are a reference for implementing Good Corporate Governance in making decisions, carrying out actions based on high morals, complying with laws and regulations and awareness of corporate social responsibility for interested parties (stakeholders).
-                  </p>
-                </div>
               </div>
             </div>
             </div>

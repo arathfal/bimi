@@ -77,14 +77,42 @@ header {
       }
     }
   }
-  &#side {
+  &#products {
     background: linear-gradient($transparent-4, $transparent-4),
       url("../images/backgroud/header-products.jpg") no-repeat center;
     background-size: cover;
     min-height: 75vh;
     width: 100%;
     position: relative;
-
+  }
+  &#about {
+    background: linear-gradient($transparent-4, $transparent-4),
+      url("../images/backgroud/header-about.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 75vh;
+    width: 100%;
+    position: relative;
+  }
+  &#corporate {
+    background: linear-gradient($transparent-1, $transparent-1),
+      url("../images/backgroud/header-corporate.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 75vh;
+    width: 100%;
+    position: relative;
+  }
+  &#contact {
+    background: linear-gradient($transparent-4, $transparent-4),
+      url("../images/backgroud/header-contact.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+  }
+  &#products,
+  &#about,
+  &#corporate,
+  &#contact {
     .title-page {
       position: absolute;
       color: #ffffff;

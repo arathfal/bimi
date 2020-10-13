@@ -1,0 +1,23 @@
+#contact-us {
+  background: $light-grey-1;
+
+  label {
+    color: $color-dark-1;
+  }
+  input {
+    &[type="text"],
+    &[type="email"] {
+      height: 45px;
+      &::placeholder {
+        font-size: 14px;
+        color: $light-grey-2;
+      }
+    }
+  }
+
+  *:focus {
+    border: 1px solid $color-primary;
+    outline: 0;
+    box-shadow: none;
+  }
+}
