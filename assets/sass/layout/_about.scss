@@ -20,17 +20,45 @@
   }
   .circle-title,
   .square-title {
-    color: #ffffff;
-    width: 200px;
-    height: 200px;
     animation: inOut 5s linear infinite;
   }
   .circle-title {
-    background: $color-primary;
+    width: 210px;
+    height: 210px;
+    color: #ffffff;
     border-radius: 50%;
+    &.commitment {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/commitment.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.integrity {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/integrity.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.open {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/open.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.rational {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/rational.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.visionary {
+      background: linear-gradient($transparent-4, $transparent-4),
+        url("../images/backgroud/visionary.jpg") no-repeat center;
+      background-size: cover;
+    }
   }
   .square-title {
     background: none;
+    color: $color-primary;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
     border: 2px solid $color-primary;
     clip-path: polygon(69% 0%, 100% 25%, 100% 99%, 22% 100%, 0% 78%, 1% 0%);
   }
