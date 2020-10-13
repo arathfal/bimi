@@ -2,6 +2,8 @@
   background: url("../images/backgroud/17580.jpg") no-repeat center;
   background-size: cover;
   ul {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-dark-1;
     li {
       padding: 0;
       list-style: none;
