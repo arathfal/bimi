@@ -67,11 +67,6 @@
       }
     }
   }
-  #value {
-    .title {
-      width: 65%;
-    }
-  }
 }
 @media only screen and (max-width: 767px) {
   header {
@@ -96,11 +91,6 @@
       button {
         right: 110px;
       }
-    }
-  }
-  #value {
-    .title {
-      width: 75%;
     }
   }
 }
@@ -136,11 +126,6 @@
       background: linear-gradient($transparent-4, $transparent-4),
         url("../images/backgroud/mbl-header-products.jpg") no-repeat center;
       background-size: cover;
-    }
-  }
-  #value {
-    .title {
-      width: 100%;
     }
   }
 }
