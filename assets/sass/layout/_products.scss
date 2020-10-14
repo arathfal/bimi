@@ -8,16 +8,14 @@
       padding: 0;
       list-style: none;
       .btn-products {
-        color: $color-primary;
+        color: $color-secondary;
         width: 100%;
         font-weight: 600;
         font-size: 17px;
-        &:hover {
-          color: $color-yellow-1;
-        }
+        &:hover,
         &[aria-expanded="true"] {
-          color: $color-yellow-1;
-          border-bottom: 2px solid $color-yellow-1;
+          border-bottom: 2px solid $color-primary;
+          color: $color-primary;
         }
         &:focus {
           outline: 0;

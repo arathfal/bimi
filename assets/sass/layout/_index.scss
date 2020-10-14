@@ -331,7 +331,7 @@ main {
       font-size: 1.8rem;
     }
     .name {
-      opacity: .8;
+      opacity: 0.8;
     }
     .position {
       opacity: 0.7;
@@ -347,37 +347,5 @@ main {
   #licences {
     background: url("../images/backgroud/25101.jpg") no-repeat center;
     background-size: cover;
-  }
-}
-
-footer {
-  .footer-top {
-    background: $color-dark-2;
-    .logo-footer {
-      width: 75px;
-    }
-    .name,
-    a,
-    p {
-      color: rgb(216, 216, 216);
-    }
-    ul {
-      li {
-        list-style: none;
-        margin-bottom: 5px;
-        a {
-          text-decoration: none;
-          &:hover {
-            color: #ffffff;
-          }
-        }
-      }
-    }
-  }
-  .footer-bottom {
-    background: $color-dark-3;
-    h6 {
-      font-size: 14px;
-    }
   }
 }

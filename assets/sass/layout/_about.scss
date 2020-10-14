@@ -11,7 +11,7 @@
   background: url("../images/backgroud/17580.jpg") no-repeat center;
   background-size: cover;
   .circle-title {
-    color: $color-primary;
+    color: #fff;
     font-weight: 600;
     animation: inOut 5s linear infinite;
   }
@@ -56,13 +56,14 @@
       list-style: none;
       .btn-about {
         background: transparent;
-        color: $color-dark-1;
+        color: $color-primary;
         width: 100%;
+        border-radius: 0;
         padding: 10px 15px;
         &:hover,
         &[aria-expanded="true"] {
           font-weight: 900;
-          border-bottom: 2px solid $color-primary;
+          border-bottom: 2px solid $color-secondary;
         }
         &:focus {
           outline: 0;

@@ -9,12 +9,12 @@
   background-size: cover;
 
   .square-title {
-    color: $color-primary;
+    color: $color-secondary;
     font-weight: 600;
     background: none;
     width: 200px;
     height: 200px;
-    border: 2px solid $color-primary;
+    border: 2px solid $color-secondary;
     clip-path: polygon(69% 0%, 100% 25%, 100% 99%, 22% 100%, 0% 78%, 1% 0%);
     animation: inOut 5s linear infinite;
   }

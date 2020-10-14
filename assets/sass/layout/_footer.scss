@@ -1,0 +1,33 @@
+footer {
+  .footer-top {
+    background: #e3e7ea;
+    border-top: 1px solid $color-dark-3;
+    .logo-footer {
+      width: 75px;
+    }
+    .name,
+    a,
+    p,
+    i {
+      color: $color-dark-3;
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-bottom: 5px;
+        a {
+          text-decoration: none;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background: $color-dark-2;
+    h6 {
+      font-size: 14px;
+    }
+  }
+}
