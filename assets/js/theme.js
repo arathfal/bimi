@@ -14,6 +14,7 @@ $(document).ready(() => {
       $("#buttonNav").addClass("button-one");
     }
   });
+  
   AOS.init();
   $("#project-slider").slick({
     infinite: true,
